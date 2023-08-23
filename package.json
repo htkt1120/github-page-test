@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/htkt1120/github-page-test/",
+  "homepage": "https://htkt1120.github.io/github-page-test/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
