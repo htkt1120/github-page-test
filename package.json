@@ -3,16 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://htkt1120.github.io/github-page-test/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && copy -r dist docs",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "rm": "del docs",
-    "mv": "move build docs",
-    "git": "git add . && git commit && git push origin main",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "rebuild": "vite build && del docs && copy -r dist docs",
+    "git": "git add . && git commit && git push origin main"
   },
   "dependencies": {
     "react": "^18.2.0",
